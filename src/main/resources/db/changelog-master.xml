@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+	
+    <changeSet author="rashmita" id="create_tables">
+      <sqlFile path="changelog/create_tables.sql" endDelimiter="/" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet author="rashmita" id="update_users_table">
+      <sqlFile path="changelog/update_users_table.sql" endDelimiter="/" relativeToChangelogFile="true"/>
+    </changeSet>
+    
+    <changeSet author="rashmita" id="update_education_table">
+      <sqlFile path="changelog/update_education_table.sql" endDelimiter="/" relativeToChangelogFile="true"/>
+    </changeSet>
+    
+    <changeSet author="rashmita" id="update_experience_table">
+      <sqlFile path="changelog/update_experience_table.sql" endDelimiter="/" relativeToChangelogFile="true"/>
+    </changeSet>
+    
+	
+ </databaseChangeLog>
